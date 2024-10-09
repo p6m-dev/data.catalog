@@ -1,0 +1,265 @@
+---
+description: "Data Catalog"
+authors: ["Jimmie Fulton>"]
+languages: []
+frameworks: []
+tags: []
+
+requires:
+  archetect: "2.0.0-ALPHA.10"
+
+entries:
+  - archetype:
+      description: "Data Adapters"
+      source: git@github.com:p6m-dev/python-project-scaffolding.archetype.git
+      answers:
+        menus:
+          - menu_name: "Data Adapters - Social"
+            menu_options: [
+              "Facebook",
+              "Instagram",
+              "LinkedIn",
+              "Tiktok",
+              "Twitter",
+              "Reddit",
+              "Blogs",
+            ]
+          - menu_name: "Data Adapters - News"
+            menu_options: [
+              "News API",
+              "Google News",
+              "Bing News",
+            ]
+          - menu_name: "Data Adapters - B2B"
+            menu_options: [
+              "Salesforce",
+              "Microsoft Dynamics",
+              "Zendesk",
+              "Hubspot",
+            ]
+          - menu_name: "Data Adapters - Reviews"
+            menu_options: [
+              "Google Reviews",
+              "Amazon Reviews",
+              "Yelp Reviews",
+            ]
+          - menu_name: "Data Adapters - Financial"
+            menu_options: [
+              "SEC Filings",
+            ]
+          - menu_name: "Data Adapters - Corporate"
+            menu_options: [
+              "Relational",
+            ]
+          - menu_name: "Data Adapters - Streaming"
+            menu_options: [
+              "Kafka",
+              "Kinesis",
+            ]
+  - archetype:
+      description: "Converters"
+      source: git@github.com:p6m-dev/python-project-scaffolding.archetype.git
+      answers:
+        menus:
+          - menu_name: "Converters"
+            menu_options: [
+              "PDF to Text",
+              "HTML to Text",
+              "JSONL to Text",
+              "Office DOC to Text",
+              "Office PPT to Text",
+              "Audio to Text",
+            ]
+  - archetype:
+      description: "Transformations"
+      source: git@github.com:p6m-dev/python-project-scaffolding.archetype.git
+      answers:
+        menus:
+          - menu_name: "Transformations"
+            menu_options: [
+              "Standardization",
+              "Segmentation",
+              "Language Translation",
+              "Compaction",
+              "Encryption",
+            ]
+  - archetype:
+      description: "Storage Adapters"
+      source: git@github.com:p6m-dev/python-project-scaffolding.archetype.git
+      answers:
+        menus:
+          - menu_name: "Storage Adapters"
+            menu_options: [
+              "Pinecone",
+              "Cloud Storage",
+              "Trino",
+              "Pinot",
+              "Iceberg",
+              "Redshift",
+              "Synapse",
+              "Snowflake",
+            ]
+  - archetype:
+      description: "Data Curation Workflows"
+      source: git@github.com:p6m-dev/python-project-scaffolding.archetype.git
+      answers:
+        menus:
+          - menu_name: "Synthetic Persona Workflow - Data Sources"
+            menu_options: [
+              "Facebook",
+              "Instagram",
+              "LinkedIn",
+              "Tiktok",
+              "Twitter",
+              "Reddit",
+              "Blogs",
+            ]
+          - menu_name: "Synthetic Persona Workflow - Transformations"
+            menu_options: [
+              "Social Feed",
+              "Language Translation",
+              "Segmentation",
+            ]
+          - menu_name: "Synthetic Persona Workflow - Table Format"
+            menu_options: [
+              "Iceberg",
+              "Hive",
+            ]
+          - menu_name: "Synthetic Persona Workflow - Catalog Registration"
+            menu_options: [
+              "Glue",
+            ]
+          - menu_name: "Synthetic Persona Workflow - Publish"
+            menu_options: [
+              "Kafka",
+              "SQS",
+            ]
+          - menu_name: "Social Data Workflow - Data Sources"
+            menu_options: [
+              "Facebook",
+              "Instagram",
+              "LinkedIn",
+              "Tiktok",
+              "Twitter",
+              "Reddit",
+              "Blogs",
+            ]
+          - menu_name: "Social Data Workflow - Transformations"
+            menu_options: [
+              "Language Translation",
+              "Segmentation",
+            ]
+          - menu_name: "Social Data Workflow - Table Format"
+            menu_options: [
+              "Iceberg",
+              "Hive",
+            ]
+          - menu_name: "Social Data Workflow - Catalog Registration"
+            menu_options: [
+              "Glue",
+            ]
+          - menu_name: "Social Data Workflow - Publish"
+            menu_options: [
+              "Kafka",
+            ]
+          - menu_name: "News Workflow - Data Sources"
+            menu_options: [
+              "News API",
+              "Google News",
+              "Bing News",
+            ]
+          - menu_name: "News Workflow - Transformations"
+            menu_options: [
+              "Language Translation",
+              "Segmentation",
+            ]
+          - menu_name: "News Workflow - Table Format"
+            menu_options: [
+              "Iceberg",
+              "Hive",
+            ]
+          - menu_name: "News Workflow - Catalog Registration"
+            menu_options: [
+              "Glue",
+            ]
+          - menu_name: "News Workflow - Publish"
+            menu_options: [
+              "Kafka",
+            ]
+          - menu_name: "Reviews Workflow - Data Sources"
+            menu_options: [
+              "Google Reviews",
+              "Yelp Reviews",
+              "Amazon Reviews",
+            ]
+          - menu_name: "Reviews Workflow - Transformations"
+            menu_options: [
+              "Language Translation",
+              "Segmentation",
+            ]
+          - menu_name: "Reviews Workflow - Table Format"
+            menu_options: [
+              "Iceberg",
+              "Hive",
+            ]
+          - menu_name: "Reviews Workflow - Catalog Registration"
+            menu_options: [
+              "Glue",
+            ]
+          - menu_name: "Reviews Workflow - Publish"
+            menu_options: [
+              "Kafka",
+            ]
+          - menu_name: "B2B Workflow - Data Sources"
+            menu_options: [
+              "Salesforce",
+              "Microsoft Dynamics",
+              "Zendesk",
+              "Hubspot",
+              "ESG",
+            ]
+          - menu_name: "B2B Workflow - Transformations"
+            menu_options: [
+              "Language Translation",
+              "Segmentation",
+            ]
+          - menu_name: "B2B Workflow - Table Format"
+            menu_options: [
+              "Iceberg",
+              "Hive",
+            ]
+          - menu_name: "B2B Workflow - Catalog Registration"
+            menu_options: [
+              "Glue",
+            ]
+          - menu_name: "B2B Workflow - Publish"
+            menu_options: [
+              "Kafka",
+            ]
+          - menu_name: "Streaming Workflow - Data Sources"
+            menu_options: [
+              "Kafka Consumers",
+            ]
+          - menu_name: "Streaming Workflow - Transformations"
+            menu_options: [
+              "Spark Streaming",
+            ]
+          - menu_name: "Streaming Workflow - Storage"
+            menu_options: [
+              "Pinot",
+            ]
+          - menu_name: "Streaming Workflow - Table Format"
+            menu_options: [
+              "Iceberg",
+              "Hive",
+            ]
+          - menu_name: "Streaming Workflow - Catalog Registration"
+            menu_options: [
+              "Glue",
+            ]
+          - menu_name: "Streaming Workflow - Publish"
+            menu_options: [
+              "Kafka",
+            ]
+
+
