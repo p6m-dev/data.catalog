@@ -7,5 +7,5 @@
 To generate an Archetype from this Catalog, copy and execute the following command:
 
 ```sh
-archetect render git@github.com:p6m-dev/data.catalog.git
+archetect render git@github.com:p6m-archetypes/data.catalog.git
 ```

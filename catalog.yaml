@@ -11,7 +11,7 @@ requires:
 entries:
   - archetype:
       description: "Data Adapters"
-      source: git@github.com:p6m-dev/python-project-scaffolding.archetype.git
+      source: git@github.com:p6m-archetypes/python-project-scaffolding.archetype.git
       answers:
         menus:
           - menu_name: "Data Adapters - Social"
@@ -58,7 +58,7 @@ entries:
             ]
   - archetype:
       description: "Converters"
-      source: git@github.com:p6m-dev/python-project-scaffolding.archetype.git
+      source: git@github.com:p6m-archetypes/python-project-scaffolding.archetype.git
       answers:
         menus:
           - menu_name: "Converters"
@@ -72,7 +72,7 @@ entries:
             ]
   - archetype:
       description: "Transformations"
-      source: git@github.com:p6m-dev/python-project-scaffolding.archetype.git
+      source: git@github.com:p6m-archetypes/python-project-scaffolding.archetype.git
       answers:
         menus:
           - menu_name: "Transformations"
@@ -85,7 +85,7 @@ entries:
             ]
   - archetype:
       description: "Storage Adapters"
-      source: git@github.com:p6m-dev/python-project-scaffolding.archetype.git
+      source: git@github.com:p6m-archetypes/python-project-scaffolding.archetype.git
       answers:
         menus:
           - menu_name: "Storage Adapters"
@@ -101,7 +101,7 @@ entries:
             ]
   - archetype:
       description: "Data Curation Workflows"
-      source: git@github.com:p6m-dev/python-project-scaffolding.archetype.git
+      source: git@github.com:p6m-archetypes/python-project-scaffolding.archetype.git
       answers:
         menus:
           - menu_name: "Synthetic Persona Workflow - Data Sources"
